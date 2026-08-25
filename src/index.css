@@ -3,9 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  :root{
+  :root {
+    --radius: 0.5rem;
+    --background: 12 30% 8%;
+    --foreground: 210 40% 98%;
+    --music-primary: 280 85% 55%;
+    --music-secondary: 200 90% 50%;
+    --music-accent: 45 95% 55%;
+  }
+
+  html {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  :root {
      --radius: 0.5rem;
-     --background: 222.2 84% 4.9%;
+     --background: 12 30% 8%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
